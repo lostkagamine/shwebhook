@@ -59,7 +59,6 @@ const DEFAULT_CONFIG_FILE_PATH: &str = "/etc/shwebhook.toml";
 #[tokio::main]
 async fn main() -> Result<(), ()> {
     let cli = ProgramArgs::parse();
-    println!("{}", cli.message);
     let cfg_file_loc = match Path::new("./shwebhook.toml").exists() {
         true => "./shwebhook.toml",
         false => DEFAULT_CONFIG_FILE_PATH

@@ -9,13 +9,14 @@ Configuration is done in this TOML file.
 
 An example configuration:
 ```toml
-default_url = "URL GOES HERE"
+default_url = "https://canary.discord.com/webhooks/1234567890/TOKEN.HERE/"
 default_profile = "basic"
 
 [[profiles]]
 name = "basic"
 username = "Your Username" # optional
 avatar = "Your Avatar" # optional
+url = "https://canary.discord.com/webhooks/1234567890/TOKEN.HERE/" # optional, overrides default_url
 ```
 
 Each config file consists of a default URL, a default profile, and one or more profiles.
